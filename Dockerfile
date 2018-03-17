@@ -3,7 +3,7 @@ MAINTAINER Bo Qi <simble1986@gmail.com>
 
 # Preparation
 RUN apk -U add ca-certificates python python-dev py-pip build-base unzip
-RUN pip install pyzmq && 、
+RUN pip install pyzmq && \
     wget https://github.com/locustio/locust/archive/master.zip && \
     unzip master.zip && \
     cd locust-master && python setup.py install && \
